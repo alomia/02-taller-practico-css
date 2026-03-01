@@ -85,7 +85,12 @@ p {
   color: var(--color-text-muted);
 }
 
-.navbar__item:hover {
+.navbar__link {
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
   color: var(--color-primary);
 }
 
