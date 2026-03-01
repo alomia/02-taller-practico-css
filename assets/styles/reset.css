@@ -1,0 +1,52 @@
+/* 1. Box sizing: Fundamental para que el padding no rompa tus layouts */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Quitar márgenes por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Permitir que el body ocupe toda la altura y tenga un scroll suave */
+html {
+  font-size: 62.5%; /* Hace que 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, sans-serif; /* Tipografia del sistema*/
+}
+
+/* 4. Mejorar el manejo de elementos multimedia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Evitar que los inputs y botones hereden tipografías raras */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Evitar que el texto se salga de los contenedores */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+/* 7. Quitar los puntos de las listas (opcional, pero profesional) */
+ul, ol {
+  list-style: none;
+}
+
+/* 8. Hacer que los enlaces no parezcan de los 90s */
+a {
+  text-decoration: none;
+  color: inherit;
+}

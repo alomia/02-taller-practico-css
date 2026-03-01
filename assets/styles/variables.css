@@ -1,0 +1,9 @@
+:root {
+    --font-primary: 'cinzel';
+    --font-secondary: 'inter';
+
+    --color-bg: #060708;
+    --color-primary: #daa24f;
+    --color-text-muted: #8d8579;
+    --color-white: #e8e4dd;
+}
